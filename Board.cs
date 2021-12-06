@@ -91,7 +91,68 @@ namespace HashGame
                         return false;
                     }
                 }
-            }
+            } 
+
+            return true;
+        } 
+
+        // Make a move. 
+        public void Play(int row, int col, boardItem boardItem) 
+        {
+            if (matrix[row, col] != boardItem.EMPTY) 
+            {
+                // If the move has already taken place, throws the exception.
+                throw new PlayException("This move has already been done.");
+            } 
+
+            // Assigns the item the position of the board.
+            matrix[row, col] = boardItem;
+        } 
+
+        // Checks if there is a sequence of 3 items.
+        private BoardItem? CheckSequence() 
+        {
+            if (matrix[0, 0] != BoardItem.EMPTY && matrix[0, 0] == matrix[0, 1] && matrix[0, 1] == matrix[0, 2])
+			{
+				return matrix[0, 0];
+			}
+
+			if (matrix[1, 0] != BoardItem.EMPTY && matrix[1, 0] == matrix[1, 1] && matrix[1, 1] == matrix[1, 2])
+			{
+				return matrix[1, 0];
+			}
+
+			if (matrix[2, 0] != BoardItem.EMPTY && matrix[2, 0] == matrix[2, 1] && matrix[2, 1] == matrix[2, 2])
+			{
+				return matrix[2, 0];
+			}
+
+			if (matrix[0, 0] != BoardItem.EMPTY && matrix[0, 0] == matrix[1, 0] && matrix[1, 0] == matrix[2, 0])
+			{
+				return matrix[0, 0];
+			}
+
+			if (matrix[0, 1] != BoardItem.EMPTY && matrix[0, 1] == matrix[1, 1] && matrix[1, 1] == matrix[2, 1])
+			{
+				return matrix[0, 1];
+			}
+
+			if (matrix[0, 2] != BoardItem.EMPTY && matrix[0, 2] == matrix[1, 2] && matrix[1, 2] == matrix[2, 2])
+			{
+				return matrix[0, 2];
+			}
+
+			if (matrix[0, 0] != BoardItem.EMPTY && matrix[0, 0] == matrix[1, 1] && matrix[1, 1] == matrix[2, 2])
+			{
+				return matrix[0, 0];
+			}
+
+			if (matrix[0, 2] != BoardItem.EMPTY && matrix[0, 2] == matrix[1, 1] && matrix[1, 1] == matrix[2, 0])
+			{
+				return matrix[0, 2];
+			}
+
+			return null;
         }
 
     }
