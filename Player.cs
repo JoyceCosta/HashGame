@@ -14,7 +14,7 @@ namespace HashGame
         // Item associated with the player ('X' or 'O').
         public BoardItem BoardItem { get; private set; } 
 
-        // Comstructor.
+        // Constructor.
         public Player(string name, ConsoleColor color, BoardItem boardItem) 
         {
             this.Name = name; 

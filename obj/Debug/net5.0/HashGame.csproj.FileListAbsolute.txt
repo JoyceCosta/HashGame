@@ -1,0 +1,16 @@
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/bin/Debug/net5.0/HashGame
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/bin/Debug/net5.0/HashGame.deps.json
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/bin/Debug/net5.0/HashGame.runtimeconfig.json
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/bin/Debug/net5.0/HashGame.runtimeconfig.dev.json
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/bin/Debug/net5.0/HashGame.dll
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/bin/Debug/net5.0/ref/HashGame.dll
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/bin/Debug/net5.0/HashGame.pdb
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/obj/Debug/net5.0/HashGame.csproj.AssemblyReference.cache
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/obj/Debug/net5.0/HashGame.GeneratedMSBuildEditorConfig.editorconfig
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/obj/Debug/net5.0/HashGame.AssemblyInfoInputs.cache
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/obj/Debug/net5.0/HashGame.AssemblyInfo.cs
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/obj/Debug/net5.0/HashGame.csproj.CoreCompileInputs.cache
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/obj/Debug/net5.0/HashGame.dll
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/obj/Debug/net5.0/ref/HashGame.dll
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/obj/Debug/net5.0/HashGame.pdb
+/home/mannon/Documents/c#/c#SoftBlue/HashGame/obj/Debug/net5.0/HashGame.genruntimeconfig.cache

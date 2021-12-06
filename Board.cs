@@ -4,7 +4,7 @@ using System.Text;
 namespace HashGame
 {   
     // Items that can be part of the board.
-    enum boardItem 
+    enum BoardItem 
     {
         X,
         O,
@@ -23,7 +23,7 @@ namespace HashGame
             {
                 for (int j = 0; j < 3; j++) 
                 {
-                    matrix[i, j] = boardItem.EMPTY;
+                    matrix[i, j] = BoardItem.EMPTY;
                 }
             }
         }
@@ -59,18 +59,18 @@ namespace HashGame
         } 
 
         // Converts a BoardItem to a char.
-        private char ConvertBoardItemToChar(boardItem boardItem) 
+        private char ConvertBoardItemToChar(BoardItem boardItem) 
         {
             switch (boardItem) 
             {
-                case boardItem.X: return 'X';
-                case boardItem.O: return 'O';
+                case BoardItem.X: return 'X';
+                case BoardItem.O: return 'O';
                 default: return ' ';
             }
         } 
 
         // Checks if the game is over.
-        public bool IsFinished(out boardItem? /*(question mark to be able to assign null to winnerBoardItem)*/ winnerBoardItem) 
+        public bool IsFinished(out BoardItem?  winnerBoardItem/*(question mark to be able to assign null to winnerBoardItem)*/) 
         {
             winnerBoardItem = CheckSequence();
 
@@ -86,7 +86,7 @@ namespace HashGame
             {
                 for (int j = 0; j < 3; j++) 
                 {
-                    if (matrix[i, j] == boardItem.EMPTY) 
+                    if (matrix[i, j] == BoardItem.EMPTY) 
                     {
                         return false;
                     }
@@ -97,9 +97,9 @@ namespace HashGame
         } 
 
         // Make a move. 
-        public void Play(int row, int col, boardItem boardItem) 
+        public void Play(int row, int col, BoardItem boardItem) 
         {
-            if (matrix[row, col] != boardItem.EMPTY) 
+            if (matrix[row, col] != BoardItem.EMPTY) 
             {
                 // If the move has already taken place, throws the exception.
                 throw new PlayException("This move has already been done.");
